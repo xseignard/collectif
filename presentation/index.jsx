@@ -127,7 +127,7 @@ const Presentation = () => (
 							Par ailleurs, nous travaillons régulièrement à la <b>transmission</b> ou l’<b>échange</b> avec des publics divers en partenariat avec les structures du territoire (workshops, ateliers, cours, etc.).
 						</Text>
 						<Text padding="0px 20px 20px 20px" textAlign="justify">
-							Dans ce contexte professionnel et artistique, il nous paraît riche de <b>favoriser la proximité</b> avec Les Badaux Associés, au sein d’un lieu commun.
+							Dans ce contexte professionnel et artistique, il nous paraît riche de <b>favoriser la proximité</b> avec Les Badauds Associés, au sein d’un lieu commun.
 						</Text>
 					</Fill>
 				</Layout>
