@@ -1,0 +1,288 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@font-face {
+  font-family: 'haas-thin';
+  src: url('../assets/fonts/haas-thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'haas-light';
+  src: url('../assets/fonts/haas-light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'haas-bold';
+  src: url('../assets/fonts/haas-bold.ttf') format('truetype');
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'haas-light', helvetica, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+strong{
+	font-family: 'haas-bold', helvetica, sans-serif;
+}
+h1,h2,h3{
+	text-transform: uppercase;
+	font-family: 'haas-bold', helvetica, sans-serif;
+}
+
+h1{
+	font-size: 4,375rem;
+}
+
+h2{
+	font-size: 3.125rem;
+}
+
+h3{
+	font-size: 1.875rem;
+}
+
+.section{
+		font-size: 70px;
+		margin-bottom: 50px;
+}
+
+p{
+		font-size: 24px;
+		line-height: 30px;
+		color: #333;
+		margin-bottom: 30px;
+		font-family: 'haas-light', helvetica, sans-serif;
+
+}
+
+a{
+	color:#00ADEF;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 24px;
+}
+
+a:hover{
+	background-color: yellow;
+	color: black;
+	text-decoration: none;
+	transition : all .3s;
+}
+
+img{
+	border-radius: 300px;
+
+}
+
+.sep{
+	border-bottom: 5px solid #333;
+	width: 50px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.thin{
+	font-family: 'haas-thin', helvetica, sans-serif;
+}
+
+.slide{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	left: 100%;
+	opacity: 0;
+	transition : left .8s, opacity .3s;
+	background: #fff;
+}
+
+.currentSlide{
+	left: 0;
+	opacity: 1;
+	z-index: 1;
+}
+
+.cont{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+
+}
+
+.full{
+	width:100%;
+	color: #333;
+	padding: 2rem 0 0 2rem;
+	box-sizing : border-box;
+}
+
+.left{
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	left: 0;
+	color: #333;
+	padding: 2rem;
+	box-sizing : border-box;
+}
+
+.right{
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	right: 0;
+	text-align: center;
+}
+
+.slide li{
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.blue{
+	background: #0f2d45;
+}
+
+#nav{
+	position: fixed;
+	right: 0;
+	z-index: 10;
+	top: 50%;
+	transform : translateY(-50%);
+	width: 40px;
+}
+#nav ul{
+	overflow: visible;
+	position: relative;
+	right: 0;
+}
+.bull{
+	position: relative;
+	color: #999;
+	cursor: pointer;
+	font-size: 20px;
+	padding: 5px;
+	text-align: center;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	line-height: 30px;
+}
+.bull:hover{
+	color: #fff;
+	background: #000;
+	padding-right: 20px;
+	transition : all .3s;
+}
+
+.currentBull{
+	color: #fff;
+	background: #000;
+	transition : all .3s;
+	padding-right: 20px;
+}
+
+/************************ SLIDE 1 *********************************/
+
+#slide1 .cont{
+	padding: 2rem;
+	box-sizing : border-box;
+	color: #fff;
+}
+
+#slide1 li{
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+
+#slide1 .sep{
+	border-color: #fff;
+}
+
+
+/************************ SLIDE 2 *********************************/
+
+#slide2 .right{
+	background-image: url('../assets/img/motiv.png');
+	background-size: contain;
+	background-color: #fbb03b;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#slide3 .right{
+	background-color: #fbb03b;
+}
+
+/************************ SLIDE 4 *********************************/
+
+#slide4 .right{
+	background-image: url('../assets/img/vision.png');
+	background-size: contain;
+	background-color: #ff7bac;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+#slide5 .right{
+	background-color: #ff7bac;
+}
+
+#slide6 .right{
+	padding: 2rem;
+}
+
+/************************ SLIDE 12 *********************************/
+
+#slide12 .right{
+	background-image: url('../assets/img/contact.png');
+	background-size: contain;
+	background-color: #29abe2;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
