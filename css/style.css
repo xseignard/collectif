@@ -3,31 +3,99 @@
    License: none (public domain)
 */
 @font-face {
-  font-family: 'haas-thin';
-  src: url('../assets/fonts/haas-thin.ttf') format('truetype');
+	font-family: 'haas-thin';
+	src: url('../assets/fonts/haas-thin.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'haas-light';
-  src: url('../assets/fonts/haas-light.ttf') format('truetype');
+	font-family: 'haas-light';
+	src: url('../assets/fonts/haas-light.ttf') format('truetype');
 }
 @font-face {
-  font-family: 'haas-bold';
-  src: url('../assets/fonts/haas-bold.ttf') format('truetype');
+	font-family: 'haas-bold';
+	src: url('../assets/fonts/haas-bold.ttf') format('truetype');
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -36,22 +104,35 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
 body {
 	line-height: 1;
 	font-family: 'haas-light', helvetica, sans-serif;
 }
-ol, ul {
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
@@ -59,118 +140,118 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html,body{
+html,
+body {
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
 }
 
-strong{
+strong {
 	font-family: 'haas-bold', helvetica, sans-serif;
 }
-h1,h2,h3{
+h1,
+h2,
+h3 {
 	text-transform: uppercase;
 	font-family: 'haas-bold', helvetica, sans-serif;
 }
 
-h1{
-	font-size: 4,375rem;
+h1 {
+	font-size: 4.375rem;
 }
 
-h2{
+h2 {
 	font-size: 3.125rem;
 }
 
-h3{
+h3 {
 	font-size: 1.875rem;
 }
 
-.section{
-		font-size: 70px;
-		margin-bottom: 50px;
+.section {
+	font-size: 70px;
+	margin-bottom: 50px;
 }
 
-p{
-		font-size: 24px;
-		line-height: 30px;
-		color: #333;
-		margin-bottom: 30px;
-		font-family: 'haas-light', helvetica, sans-serif;
-
+p {
+	font-size: 24px;
+	line-height: 30px;
+	color: #333;
+	margin-bottom: 30px;
+	font-family: 'haas-light', helvetica, sans-serif;
 }
 
-a{
-	color:#00ADEF;
+a {
+	color: #00adef;
 	text-decoration: underline;
 	font-style: italic;
 	font-size: 24px;
 }
 
-a:hover{
+a:hover {
 	background-color: yellow;
 	color: black;
 	text-decoration: none;
-	transition : all .3s;
+	transition: all 0.3s;
 }
 
-img{
+img {
 	border-radius: 300px;
-
 }
 
-.sep{
+.sep {
 	border-bottom: 5px solid #333;
 	width: 50px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
 
-.thin{
+.thin {
 	font-family: 'haas-thin', helvetica, sans-serif;
 }
 
-.slide{
+.slide {
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	z-index: -1;
 	left: 100%;
 	opacity: 0;
-	transition : left .8s, opacity .3s;
+	transition: left 0.8s, opacity 0.3s;
 	background: #fff;
 }
 
-.currentSlide{
+.currentSlide {
 	left: 0;
 	opacity: 1;
 	z-index: 1;
 }
 
-.cont{
+.cont {
 	position: absolute;
 	height: 100%;
 	width: 100%;
-
 }
 
-.full{
-	width:100%;
+.full {
+	width: 100%;
 	color: #333;
 	padding: 2rem 0 0 2rem;
-	box-sizing : border-box;
+	box-sizing: border-box;
 }
 
-.left{
+.left {
 	position: absolute;
 	height: 100%;
 	width: 50%;
 	left: 0;
 	color: #333;
 	padding: 2rem;
-	box-sizing : border-box;
+	box-sizing: border-box;
 }
 
-.right{
+.right {
 	position: absolute;
 	height: 100%;
 	width: 50%;
@@ -178,29 +259,29 @@ img{
 	text-align: center;
 }
 
-.slide li{
+.slide li {
 	margin-bottom: 15px;
 	cursor: pointer;
 }
 
-.blue{
+.blue {
 	background: #0f2d45;
 }
 
-#nav{
+#nav {
 	position: fixed;
 	right: 0;
 	z-index: 10;
 	top: 50%;
-	transform : translateY(-50%);
+	transform: translateY(-50%);
 	width: 40px;
 }
-#nav ul{
+#nav ul {
 	overflow: visible;
 	position: relative;
 	right: 0;
 }
-.bull{
+.bull {
 	position: relative;
 	color: #999;
 	cursor: pointer;
@@ -213,41 +294,40 @@ img{
 	border-radius: 30px;
 	line-height: 30px;
 }
-.bull:hover{
+.bull:hover {
 	color: #fff;
 	background: #000;
 	padding-right: 20px;
-	transition : all .3s;
+	transition: all 0.3s;
 }
 
-.currentBull{
+.currentBull {
 	color: #fff;
 	background: #000;
-	transition : all .3s;
+	transition: all 0.3s;
 	padding-right: 20px;
 }
 
 /************************ SLIDE 1 *********************************/
 
-#slide1 .cont{
+#slide1 .cont {
 	padding: 2rem;
-	box-sizing : border-box;
+	box-sizing: border-box;
 	color: #fff;
 }
 
-#slide1 li{
+#slide1 li {
 	font-size: 30px;
 	margin-bottom: 10px;
 }
 
-#slide1 .sep{
+#slide1 .sep {
 	border-color: #fff;
 }
 
-
 /************************ SLIDE 2 *********************************/
 
-#slide2 .right{
+#slide2 .right {
 	background-image: url('../assets/img/motiv.png');
 	background-size: contain;
 	background-color: #fbb03b;
@@ -255,34 +335,12 @@ img{
 	background-repeat: no-repeat;
 }
 
-#slide3 .right{
-	background-color: #fbb03b;
-}
-
-/************************ SLIDE 4 *********************************/
-
-#slide4 .right{
-	background-image: url('../assets/img/vision.png');
-	background-size: contain;
-	background-color: #ff7bac;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
-}
-
-#slide5 .right{
-	background-color: #ff7bac;
-}
-
-#slide6 .right{
-	padding: 2rem;
-}
-
 /************************ SLIDE 12 *********************************/
 
-#slide12 .right{
+#slide9 .right {
 	background-image: url('../assets/img/contact.png');
 	background-size: contain;
 	background-color: #29abe2;
-	background-position: 50% 50%;
+	background-position: 100% 100%;
 	background-repeat: no-repeat;
 }
